@@ -42,5 +42,5 @@ Stuff I plan to do:
 - [ ] Automatic scale factor for different resolution?
 - [ ] Allow selection of other packing algs
 - [ ] Comment my code (whoops)
-- [ ] Rework structure for readability (and maybe efficiency?)
+- [ ] Rewrite for readability (and maybe efficiency?)
 
