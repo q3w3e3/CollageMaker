@@ -1,7 +1,11 @@
 # CollageMaker
 Bin packing collage maker
 
+![Normalized](https://github.com/q3w3e3/CollageMaker/blob/master/Samples/Normalized.jpg)
+
+
 Test/ contains a selection of images for testing
+Samples/ contains a couple sample outputs
 
 optional arguments:
 
