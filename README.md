@@ -44,4 +44,6 @@ Stuff I plan to do:
 - [ ] Allow selection of other packing algs
 - [ ] Comment my code (whoops)
 - [ ] Rewrite for readability (and maybe efficiency?)
+- [ ] Add setup file to grab dependencies
+- [ ] Actually state my dependencies somewhere
 
