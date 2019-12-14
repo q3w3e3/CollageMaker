@@ -15,7 +15,6 @@ Pillow==6.2.1
 pyparsing==2.4.5
 python-dateutil==2.8.1
 rectpack==0.2.1
-requests==2.22.0
 six==1.13.0
 tqdm==4.40.2
 traceback2==1.4.0
