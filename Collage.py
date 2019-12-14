@@ -4,7 +4,11 @@ import argparse
 from tqdm import tqdm
 from rectpack import packer, newPacker, GuillotineBssfSas
 from PIL import Image, ImageFile
+
+# Allow loading of truncated image files
 ImageFile.LOAD_TRUNCATED_IMAGES = True
+
+# Disable warnings on large images and those with iffy EXIF data
 Image.warnings.simplefilter('ignore', Image.DecompressionBombWarning)
 Image.warnings.filterwarnings("ignore", "(Possibly )?corrupt EXIF data", UserWarning)
 
@@ -84,7 +88,7 @@ def pasteImages(directory, normalizeHeight, scaleFactor, tileHeight, rectangles,
 
 def main():
     parse = argparse.ArgumentParser(description='collage maker')
-    parse.add_argument('-f', '--folder', dest='folder', help='folder with images (*.jpg, *.jpeg, *.png)', default='.')
+    parse.add_argument('-f', '--folder', dest='folder', help='folder with images (*.jpg)', default='.')
     parse.add_argument('-o', '--output', dest='output', help='output collage image filename', default='collage.jpg')
     parse.add_argument('-n', '--normalize', dest='normalizeHeight', type=bool, help='set True to normalize image heights', default=False)
     parse.add_argument('-H', '--height', dest='height', type=int, help='height of normalized image', default=100)
@@ -114,10 +118,6 @@ def main():
     background = makeCanvas(x,y)
 
     pasteImages(args.folder, args.normalizeHeight, args.scaleFactor, args.height, rectangles, x, y, background, args.output)
-
-    
-
-
 
 if __name__ == '__main__':
     main()
