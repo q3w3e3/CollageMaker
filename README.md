@@ -12,7 +12,7 @@ optional arguments:
   -h, --help            show this help message and exit
   
   -f FOLDER, --folder FOLDER
-                        folder with images (*.jpg, *.jpeg, *.png)
+                        folder with images (*.jpg)
                         
   -o OUTPUT, --output OUTPUT
                         output collage image filename
@@ -31,3 +31,16 @@ optional arguments:
                         
   -r RESOLUTION, --resolution RESOLUTION
                         Final image resolution
+
+# ToDo
+
+Stuff I plan to do:
+
+- [ ] Automatic selection of automation (based on relative size of largest and smallest image)
+- [ ] Have a min and max image size, but allow images between? Scale outside range to fit?
+- [ ] Random image scale between a min and max?
+- [ ] Automatic scale factor for different resolution?
+- [ ] Allow selection of other packing algs
+- [ ] Comment my code (whoops)
+- [ ] Rework structure for readability (and maybe efficiency?)
+
