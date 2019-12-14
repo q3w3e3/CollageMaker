@@ -92,9 +92,9 @@ def main():
     parse.add_argument('-o', '--output', dest='output', help='output collage image filename', default='collage.jpg')
     parse.add_argument('-n', '--normalize', dest='normalizeHeight', type=bool, help='set True to normalize image heights', default=False)
     parse.add_argument('-H', '--height', dest='height', type=int, help='height of normalized image', default=100)
-    parse.add_argument('-m', '--multiplier', dest='multiplier', type=float, help='Scale final image by a factor of', default=2)
+    parse.add_argument('-m', '--multiplier', dest='multiplier', type=float, help='Scale final image by a factor of', default=3)
     parse.add_argument('-s', '--scaleFactor', dest='scaleFactor', type=float, help='Scale each image by a factor of', default=1)
-    parse.add_argument('-r', '--resolution', dest='resolution', type=int, help='Final image resolution', default=5000)
+    parse.add_argument('-r', '--resolution', dest='resolution', type=int, help='Final image resolution', default=2000)
 
     args = parse.parse_args()
     packer = newPacker(pack_algo = GuillotineBssfSas, rotation = False)

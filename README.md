@@ -1,6 +1,8 @@
 # CollageMaker
 Bin packing collage maker
 
+Test/ contains a selection of images for testing
+
 optional arguments:
 
   -h, --help            show this help message and exit
