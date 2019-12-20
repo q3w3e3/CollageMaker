@@ -45,5 +45,5 @@ Stuff I plan to do:
 - [ ] Comment my code (whoops)
 - [ ] Rewrite for readability (and maybe efficiency?)
 - [ ] Add setup file to grab dependencies
-- [x] Actually state my dependencies/requirements somewhere
+- [x] Actually state my dependencies/requirements somewhere (dependency list is out of date currently)
 
